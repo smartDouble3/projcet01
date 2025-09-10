@@ -6,7 +6,7 @@
                 password: "admin123",
                 phone: "0800000000",
                 role: "admin",
-                profileImage: "/Projcet copy/img/S__24346630_0.jpg"
+                profileImage: "img/S__24346630_0.jpg"
             },
             {
                 name: "ธิติมา -",
@@ -14,7 +14,7 @@
                 password: "it123",
                 phone: "0801234567",
                 role: "staff",
-                profileImage: "/Projcet copy/img/S__24346632_0.jpg"
+                profileImage: "img/S__24346632_0.jpg"
             },
             {
                 name: "ช่างเทคนิค",
