@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Repair System - Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="loginForm">
+            <h1>เข้าสู่ระบบ</h1>
+            <form id="emailFrom">
+                <div class="login_sign">
+                    <div class="input-group">
+                        <input type="email" placeholder="อีเมล" required id="E_mail_login" class="Login_box">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="รหัสผ่าน" required id="Password_login" class="Login_box">
+                    </div>
+                    <div class="btu">
+                        <button type="submit" id="Confirm">
+                            เข้าสู่ระบบ
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div id="loginMessage"></div>
+            <div class="DOT">
+                <p>ยังไม่มีบัญชี? <span class="switch-form" onclick="switchToSignUp()">สมัครสมาชิก</span></p>
+            </div>
+        </div>
+        <div class="form-container hidden" id="signUpForm">
+            <h1>สมัครสมาชิก</h1>
+            <form id="signUpFormElement">
+                <div class="profile-picture-container">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iNjAiIGZpbGw9IiNFNUU3RUIiLz4KPHBhdGggZD0iTTYwIDMwQzY2LjYyNzQgMzAgNzIgMzUuMzcyNiA3MiA0MkM3MiA0OC42Mjc0IDY2LjYyNzQgNTQgNjAgNTRDNTMuMzcyNiA1NCA0OCA0OC42Mjc0IDQ4IDQyQzQ4IDM1LjM3MjYgNTMuMzcyNiAzMCA2MCAzMFoiIGZpbGw9IiM5Q0E0QUYiLz4KPHBhdGggZD0iTTM2IDkwQzM2IDc2Ljc0NTIgNDYuNzQ1MiA2NiA2MCA2NkM3My4yNTQ4IDY2IDg0IDc2Ljc0NTIgODQgOTBWOTZIMzZWOTBaIiBmaWxsPSIjOUNBNEFGIi8+Cjwvc3ZnPgo=" 
+                         alt="Profile" class="profile-picture" id="signUpProfilePic">
+                    <label class="profile-upload" for="profileImageInput">
+                        📷
+                        <input type="file" id="profileImageInput" accept="image/*" onchange="handleProfileImageUpload(event, 'signUpProfilePic')">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="ชื่อ" required id="Name_sign" class="sign_box">
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="อีเมล" required id="E_mail_sign" class="sign_box">
+                </div> 
+                <div class="input-group">
+                    <input type="tel" placeholder="เบอร์โทรศัพท์" required class="sign_box" id="Tel_sign">
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="รหัสผ่าน" required id="password_sign" class="sign_box">
+                </div>
+                  <div class="input-group">
+                    <input type="password" placeholder="รหัสผ่านอีกรอบ" required id="password_ss" class="sign_box">
+                </div>
+               
+                <div class="btu">
+                    <button type="submit" id="SignUpBtn">
+                        สมัครสมาชิก
+                    </button>
+                </div>
+            </form>
+            <div id="signUpMessage"></div>
+            <div class="DOT">
+                <p>มีบัญชีแล้ว? <span class="switch-form" onclick="switchToLogin()">เข้าสู่ระบบ</span></p>
+            </div>
+        </div>
+
+        <div class="form-container hidden" id="dashboard" style="width: 400px;">
+            <h1>ยินดีต้อนรับ</h1>
+            <div id="userInfo"></div>
+            
+            <div class="dashboard-buttons">
+                <button class="dashboard-btn" onclick="window.location.href='./com.html'">แจ้งซ่อม</button>
+            </div>
+            
+            <div class="btu">
+                <button onclick="logout()" style="background: #dc3545; width: 100%; padding: 12px; border: none; border-radius: 8px; color: white; cursor: pointer;">
+                    ออกจากระบบ
+                </button>
+                <div onclick="window.location.href='/Projcet copy/IT_Satff.html'"><button onclick="logout()" style="background: #dc3545; width: 100%; padding: 12px; border: none; border-radius: 8px; color: white; cursor: pointer; margin-top: 10px;">
+                    พนักงาน
+                </button>
+                </div>
+                 
+            </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
