@@ -12,9 +12,7 @@ const SVG_GREEN = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE
 
 const defaultUsers = [
   { name: "ทิพย์สุดา ตุพิลา", email: "admin@example.com",   password: "admin123", phone: "0800000000", role: "admin", profileImage: "/S__24346630_0.jpg" },
-  { name: "ธิติมา -",        email: "it@example.com",      password: "it123",    phone: "0801234567", role: "staff", profileImage: "/S__24346632_0.jpg" },
-  { name: "ช่างเทคนิค",        email: "tech@example.com",    password: "tech123",  phone: "0802345678", role: "staff", profileImage: SVG_BLUE },
-  { name: "ผู้เชี่ยวชาญ Network", email: "network@example.com", password: "net123",   phone: "0803456789", role: "staff", profileImage: SVG_GREEN }
+  { name: "ธิติมา -",        email: "it@example.com",      password: "it123",    phone: "0801234567", role: "staff", profileImage: "/S__24346632_0.jpg" }
 ];
 
 let users = loadUsers();
