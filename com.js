@@ -366,9 +366,6 @@
                             <button class="action-btn btn-view" onclick="viewDetails('${item.ticketNumber}')" title="ดูรายละเอียด">
                                 <i class="fas fa-eye"></i>
                             </button>
-                            <button class="action-btn btn-edit" onclick="editItem('${item.ticketNumber}')" title="แก้ไข">
-                                <i class="fas fa-edit"></i>
-                            </button>
                             <button class="action-btn btn-delete" onclick="deleteItem('${item.ticketNumber}')" title="ลบ">
                                 <i class="fas fa-trash"></i>
                             </button>
